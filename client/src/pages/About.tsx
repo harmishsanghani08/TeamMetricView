@@ -6,19 +6,19 @@ import { Target, Eye, Heart } from "lucide-react";
 
 export default function About() {
   const teamMembers = [
-    { name: "Sarah Johnson", role: "CEO & Founder" },
-    { name: "Michael Chen", role: "CTO" },
-    { name: "Emily Rodriguez", role: "Lead Designer" },
-    { name: "David Kim", role: "Senior Developer" },
-    { name: "Jessica Lee", role: "Product Manager" },
-    { name: "James Wilson", role: "Marketing Director" },
+    { name: "Harmish Sanghani", role: "CEO & Founder" },
+    // { name: "Michael Chen", role: "CTO" },
+    // { name: "Emily Rodriguez", role: "Lead Designer" },
+    // { name: "David Kim", role: "Senior Developer" },
+    // { name: "Jessica Lee", role: "Product Manager" },
+    { name: "Ashish Sanghani", role: "Marketing Director" },
   ];
 
   const values = [
     {
       icon: Target,
       title: "Mission",
-      description: "To empower businesses with innovative digital solutions that drive growth and success in the modern world.",
+      description: "Helping businesses thrive in the digital age with smart, innovative technology solutions.",
     },
     {
       icon: Eye,
@@ -45,11 +45,10 @@ export default function About() {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6" data-testid="text-about-heading">
-              About DigiSolutions
+              About TechNova
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-about-intro">
-              We are a passionate team of digital innovators dedicated to transforming
-              businesses through cutting-edge technology solutions and exceptional service.
+            We are a team of digital innovators turning ideas into powerful technology solutions that drive business growth.
             </p>
           </motion.div>
 
@@ -88,7 +87,7 @@ export default function About() {
               Meet Our Team
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto" data-testid="text-team-subheading">
-              The talented individuals who make it all happen
+              The creative minds making innovation happen every day.
             </p>
           </motion.div>
 

@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../images/tecnovalogo.jpeg";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -20,21 +21,30 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-white/80 dark:bg-card/80 backdrop-blur-md border-b border-border z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" data-testid="link-home">
-            <span className="text-xl sm:text-2xl font-display font-bold text-primary cursor-pointer">
-              DigiSolutions
-            </span>
+          <Link href="/" data-testid="link-home" className="flex items-center space-x-3">
+            {/* Logo */}
+            <img src={logo} alt="TechNova Logo" className="h-12 w-auto cursor-pointer" />
+
+            {/* Name + Tagline */}
+            <div className="flex flex-col">
+              <span className="text-xl sm:text-2xl font-bold">
+                <span className="text-blue-700">Tech</span>
+                <span className="text-black">Nova</span>
+              </span>
+              <span className="text-gray-700 text-sm">
+                Innovate. Build. Lead.
+              </span>
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link key={link.path} href={link.path} data-testid={`link-nav-${link.name.toLowerCase()}`}>
                 <span
-                  className={`text-sm font-medium transition-colors cursor-pointer ${
-                    isActive(link.path)
-                      ? "text-primary"
-                      : "text-foreground hover:text-primary"
-                  }`}
+                  className={`text-sm font-medium transition-colors cursor-pointer ${isActive(link.path)
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
+                    }`}
                 >
                   {link.name}
                 </span>
@@ -70,11 +80,10 @@ export default function Navbar() {
                 <Link key={link.path} href={link.path} data-testid={`link-mobile-${link.name.toLowerCase()}`}>
                   <div
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`block px-4 py-2 rounded-lg text-sm font-medium cursor-pointer ${
-                      isActive(link.path)
-                        ? "bg-primary/10 text-primary"
-                        : "text-foreground hover-elevate"
-                    }`}
+                    className={`block px-4 py-2 rounded-lg text-sm font-medium cursor-pointer ${isActive(link.path)
+                      ? "bg-primary/10 text-primary"
+                      : "text-foreground hover-elevate"
+                      }`}
                   >
                     {link.name}
                   </div>

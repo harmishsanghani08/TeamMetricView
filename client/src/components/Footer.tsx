@@ -24,10 +24,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-display font-bold mb-4" data-testid="text-footer-brand">
-              DigiSolutions
+              TechNova
             </h3>
             <p className="text-gray-400 text-sm" data-testid="text-footer-tagline">
-              Building your digital future with cutting-edge technology solutions.
+            Innovative technology solutions that empower your growth.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400 text-sm" data-testid="text-copyright">
-            © {currentYear} DigiSolutions. All rights reserved.
+            © {currentYear} TechNova. All rights reserved.
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ export default function TeamMemberExample() {
   return (
     <div className="p-8">
       <TeamMember
-        name="Sarah Johnson"
+        name="Harmish Sanghani"
         role="CEO & Founder"
       />
     </div>

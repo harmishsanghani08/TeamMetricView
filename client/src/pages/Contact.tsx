@@ -9,19 +9,19 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@digisolutions.com",
-      link: "mailto:hello@digisolutions.com",
+      value: "harmishsanghani@gmail.com",
+      link: "mailto:harmishsanghani@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+91 7016361450",
+      link: "tel:+917016361450",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Surat, Gujarat",
       link: null,
     },
   ];
@@ -93,9 +93,9 @@ export default function Contact() {
                   Business Hours
                 </h3>
                 <p className="text-sm text-muted-foreground" data-testid="text-business-hours">
-                  Monday - Friday: 9:00 AM - 6:00 PM PST
+                  Monday - Saturday: 9:00 AM - 7:00 PM IST
                   <br />
-                  Saturday - Sunday: Closed
+                  Sunday: Closed
                 </p>
               </div>
             </motion.div>

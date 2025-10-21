@@ -10,22 +10,22 @@ export default function Home() {
     {
       icon: Code,
       title: "Website Development",
-      description: "Custom, responsive websites built with modern technologies to elevate your online presence.",
+      description: "Building responsive, modern websites that engage users and grow your business.",
     },
     {
       icon: Smartphone,
       title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications that deliver seamless user experiences.",
+      description: "Transforming ideas into high-performance apps for iOS and Android.",
     },
     {
       icon: Palette,
       title: "UI/UX Design",
-      description: "Beautiful, intuitive designs that engage users and drive conversions.",
+      description: "Beautiful, user-centered designs that make your applications intuitive and engaging.",
     },
     {
       icon: Wrench,
       title: "Maintenance",
-      description: "Ongoing support and maintenance to keep your digital products running smoothly.",
+      description: "Continuous care and updates to keep your digital solutions secure, fast, and problem-free.",
     },
   ];
 
@@ -61,7 +61,7 @@ export default function Home() {
             className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             data-testid="text-hero-tagline"
           >
-            Transform your vision into reality with cutting-edge technology solutions.
+            Creating technology solutions that fuel innovation, streamline growth, and delight users.
             We create digital experiences that drive growth and innovation.
           </motion.p>
 
@@ -99,7 +99,7 @@ export default function Home() {
               Our Services
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto" data-testid="text-services-subheading">
-              Comprehensive digital solutions tailored to your business needs
+            Custom IT solutions crafted to meet your unique business challenges.
             </p>
           </motion.div>
 
